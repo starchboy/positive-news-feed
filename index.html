@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive News Feed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+        }
+        
+        header {
+            background-color: #3b82f6;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .news-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .news-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 1rem;
+        }
+        
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-source {
+            color: #3b82f6;
+            font-size: 0.875rem;
+        }
+        
+        .card-snippet {
+            color: #4b5563;
+            margin: 0.5rem 0;
+        }
+        
+        .card-link {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+        
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Positive News Feed</h1>
+        <p>Your daily dose of good news from around the world</p>
+    </header>
+    
+    <div class="container">
+        <div class="news-grid">
+            <!-- Sample news cards -->
+            <div class="news-card">
+                <img src="https://source.unsplash.com/random/300x200?nature" alt="News image">
+                <div class="card-content">
+                    <h3 class="card-title">New Coral Reef Restoration Project Shows Promising Results</h3>
+                    <p class="card-source">Positive News</p>
+                    <p class="card-snippet">Marine biologists report a 45% increase in coral growth after implementing innovative restoration techniques.</p>
+                    <a href="#" class="card-link">Read More</a>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <img src="https://source.unsplash.com/random/300x200?community" alt="News image">
+                <div class="card-content">
+                    <h3 class="card-title">Local Community Builds Houses for Veterans</h3>
+                    <p class="card-source">Good News Network</p>
+                    <p class="card-snippet">Volunteers came together to build affordable housing for veterans, completing 12 new homes.</p>
+                    <a href="#" class="card-link">Read More</a>
+                </div>
+            </div>
+            
+            <div class="news-card">
+                <img src="https://source.unsplash.com/random/300x200?energy" alt="News image">
+                <div class="card-content">
+                    <h3 class="card-title">Breakthrough in Renewable Energy Storage</h3>
+                    <p class="card-source">The Optimist Daily</p>
+                    <p class="card-snippet">Scientists have developed a new battery technology that can store renewable energy for longer periods.</p>
+                    <a href="#" class="card-link">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Positive News Feed &copy; 2025 | Personalize your news for a brighter outlook</p>
+    </footer>
+</body>
+</html>
